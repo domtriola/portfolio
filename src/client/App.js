@@ -10,6 +10,7 @@ const AppContainer = styled.div`
   height: 100%;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
+  background: #fff url("images/redrocks.jpg") no-repeat center center;
 `;
 
 const App = () => (
