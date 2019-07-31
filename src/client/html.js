@@ -1,4 +1,4 @@
-const html = ({ body }) => `
+const html = ({ body, styles }) => `
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -11,6 +11,7 @@ const html = ({ body }) => `
       -->
       <link rel="manifest" href="/manifest.json">
       <link rel="shortcut icon" href="/favicon.png">
+      ${styles}
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
       <title>Dominick Triola</title>
     </head>
