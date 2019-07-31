@@ -9,6 +9,7 @@ const AppContainer = styled.div`
   width: 100%;
   height: 100%;
   font-size: 40px;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const App = () => (

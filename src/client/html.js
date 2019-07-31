@@ -11,6 +11,7 @@ const html = ({ body, styles }) => `
       -->
       <link rel="manifest" href="/manifest.json">
       <link rel="shortcut icon" href="/favicon.png">
+      <link href="/style.css" rel="stylesheet">
       ${styles}
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
       <title>Dominick Triola</title>
