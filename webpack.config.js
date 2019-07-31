@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
+const NodemonPlugin = require('nodemon-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -15,9 +16,11 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: 'production',
+        NODE_ENV: 'development',
+        DEBUG: true,
       },
     }),
+    new NodemonPlugin(),
   ],
   module: {
     rules: [

@@ -4,6 +4,7 @@
   "scripts": {
     "start": "node ./build/server",
     "build": "webpack",
+    "dev": "webpack --watch",
     "test": "echo 'Missing test command'"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "html-loader": "^0.5.5",
+    "nodemon-webpack-plugin": "^4.0.8",
     "webpack": "^4.38.0",
     "webpack-cli": "^3.3.6",
     "webpack-node-externals": "^1.7.2"
