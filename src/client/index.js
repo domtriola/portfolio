@@ -2,4 +2,5 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// TODO: test this
+ReactDOM.hydrate(<App />, document.getElementById('root'));

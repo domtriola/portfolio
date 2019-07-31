@@ -17,5 +17,5 @@ export default {
       light: logoLinkedInLight,
     },
     alt: 'The GitHub Octocat logo',
-  }
+  },
 };
