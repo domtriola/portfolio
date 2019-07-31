@@ -1,6 +1,7 @@
 {
   "name": "dominicktriola",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
     "start": "node ./build/server",
     "build": "webpack",
