@@ -8,6 +8,8 @@ import html from '../client/html';
 const port = 3000;
 const app = express();
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
   const body = renderToString(<App />);
   const sheet = new ServerStyleSheet();
