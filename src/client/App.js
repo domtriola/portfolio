@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from './style/theme';
+import content from '../content';
+
+import Header from './sections/Header';
 
 const AppContainer = styled.div`
   display: flex;
@@ -10,11 +14,16 @@ const AppContainer = styled.div`
   height: 100%;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
-  background: #fff url("images/redrocks.jpg") no-repeat center center;
+  color: rgba(255,255,255,0.87);
+  background-color: ${theme.color.base};
 `;
 
 const App = () => (
-  <AppContainer>Hello</AppContainer>
+  <AppContainer>
+    <Header
+      title={content.header.title}
+    />
+  </AppContainer>
 );
 
 export default App;
