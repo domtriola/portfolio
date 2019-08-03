@@ -1,29 +1,31 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import theme from './style/theme';
 import content from '../content';
+import pixelsToRem from './style/pixelsToRem';
 
 import Header from './sections/Header';
 
 const AppContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   width: 100%;
   height: 100%;
-  font-size: 40px;
-  font-family: 'Poppins', sans-serif;
-  color: rgba(255,255,255,0.87);
-  background-color: ${theme.color.base};
+  font-size: ${pixelsToRem(40)}rem;
+  font-family: ${props => props.theme.font.main};
+  color: ${props => props.theme.color.font};
+  background-color: ${props => props.theme.color.base};
 `;
 
 const App = () => (
-  <AppContainer>
-    <Header
-      title={content.header.title}
-    />
-  </AppContainer>
+  <ThemeProvider theme={theme}>
+    <AppContainer>
+      <Header
+        title={content.header.title}
+        menuItems={content.menu.items}
+      />
+    </AppContainer>
+  </ThemeProvider>
 );
 
 export default App;
