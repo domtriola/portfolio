@@ -19,4 +19,18 @@ export default {
     ],
   },
   tagLine: 'Something about me goes here.',
+  aboutBlurb: 'More words about me and what I do...',
+  projects: [
+    {
+      title: 'SpaceTyper',
+      about: 'SpaceTyper is awesome because, blah, blah, blah...',
+      image: {
+        path: '/images/projects/spacetyper/screenshot.png',
+        alt: `
+          The Spacetyper homescreen. Ships at the starting line of an
+          intergalactic race.
+        `,
+      },
+    },
+  ],
 };

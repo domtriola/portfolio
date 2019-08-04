@@ -5,6 +5,7 @@ import rem from '../../style/rem';
 
 const P = styled.p`
   font-size: ${rem(38)};
+  margin: ${rem(50)} 0;
 `;
 
 const propTypes = {
