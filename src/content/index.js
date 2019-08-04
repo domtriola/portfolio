@@ -18,12 +18,20 @@ export default {
       },
     ],
   },
-  tagLine: 'Something about me goes here.',
-  aboutBlurb: 'More words about me and what I do...',
+  tagLine: 'Exploring code with curiosity',
+  aboutBlurb: `
+    Welcome! Here you will find some things that I have created either to learn
+    something new, or to just itch a technological or creative curiosity. I hope
+    you find some amusement in the projects. Thanks for stopping by!
+  `,
   projects: [
     {
       title: 'SpaceTyper',
-      about: 'SpaceTyper is awesome because, blah, blah, blah...',
+      about: `
+        My typing speed used to be... not great. TypeRacer was a fun way to
+        practice, but one day I thought, "Racing cars is kind of boring; I'd
+        like to race spaceships!" And SpaceTyper was born.
+      `,
       image: {
         path: '/images/projects/spacetyper/screenshot.png',
         alt: `
