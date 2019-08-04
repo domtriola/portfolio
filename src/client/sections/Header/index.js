@@ -1,16 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Menu, { menuItemsPropTypes, menuItemsDefaultProps } from '../../components/Menu';
 
 const propTypes = {
-  title: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  logoText: PropTypes.string.isRequired,
+  ...menuItemsPropTypes,
 };
 
-const Header = ({ title }) => (
+const defaultProps = {
+  ...menuItemsDefaultProps,
+};
+
+const Header = ({ logo, logoText, menuItems }) => (
   <header>
-    <h1>{title}</h1>
+    <h1>
+      {logo}
+      {logoText}
+    </h1>
+    <Menu menuItems={menuItems} />
   </header>
 );
 
 Header.propTypes = propTypes;
+Header.defaultProps = defaultProps;
 
 export default Header;

@@ -11,7 +11,7 @@ const AppContainer = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  font-size: ${pixelsToRem(40)}rem;
+  font-size: ${pixelsToRem(18)}rem;
   font-family: ${props => props.theme.font.main};
   color: ${props => props.theme.color.font};
   background-color: ${props => props.theme.color.base};
@@ -21,7 +21,8 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <AppContainer>
       <Header
-        title={content.header.title}
+        logo={content.logo.image}
+        logoText={content.logo.text}
         menuItems={content.menu.items}
       />
     </AppContainer>

@@ -1,7 +1,18 @@
-import header from './header';
-import menu from './menu';
-
 export default {
-  header,
-  menu,
+  logo: {
+    text: 'Dominick Triola',
+    image: 'svg',
+  },
+  menu: {
+    items: [
+      {
+        text: 'About',
+        link: '#about',
+      },
+      {
+        text: 'Projects',
+        link: '#projects',
+      },
+    ],
+  },
 };
