@@ -27,6 +27,7 @@ export default {
   projects: [
     {
       title: 'SpaceTyper',
+      headline: '',
       about: `
         My typing speed used to be... not great. TypeRacer was a fun way to
         practice, but one day I thought, "Racing cars is kind of boring; I'd
@@ -39,6 +40,52 @@ export default {
           intergalactic race.
         `,
       },
+      moreInfo: {
+        text: '',
+        path: '',
+      },
+      links: [
+        {
+          type: 'live',
+          iconPath: '',
+          url: 'http://www.spacetyper.com',
+        },
+        {
+          type: 'github',
+          iconPath: '',
+          url: 'https://github.com/domtriola/space-typer',
+        },
+      ],
+    },
+    {
+      title: 'Audio Visualizer',
+      headline: '',
+      about: `
+        ...
+      `,
+      image: {
+        path: '/images/projects/audiovisualizer/screenshot.png',
+        alt: `
+          A screenshot of the audio visualizer display. Ripples in rainbow
+          colors.
+        `,
+      },
+      moreInfo: {
+        text: '',
+        path: '',
+      },
+      links: [
+        {
+          type: 'live',
+          iconPath: '',
+          url: 'https://audio-visualizer-v2.herokuapp.com/',
+        },
+        {
+          type: 'github',
+          iconPath: '',
+          url: 'https://github.com/domtriola/audio-visualizer-v2',
+        },
+      ],
     },
   ],
 };
