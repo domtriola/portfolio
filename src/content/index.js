@@ -18,4 +18,5 @@ export default {
       },
     ],
   },
+  tagLine: 'Something about me goes here.',
 };
