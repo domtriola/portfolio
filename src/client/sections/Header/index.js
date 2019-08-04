@@ -9,9 +9,9 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   padding: ${rem(20)}
   width: 100%;
+  height: fit-content;
 `;
 
 const propTypes = {

@@ -52,6 +52,7 @@ table {
 html {
 	font-size: 16px;
 	box-sizing: border-box;
+	background-color: #1D303F;
 }
 
 *, *:before, *:after {

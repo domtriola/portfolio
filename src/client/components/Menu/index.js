@@ -1,5 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import rem from '../../style/rem';
+
+const MenuLink = styled.a`
+  color: ${props => props.theme.color.font};
+  text-decoration: none;
+  padding: 0 ${rem(20)};
+`;
 
 export const menuItemsPropTypes = {
   menuItems: PropTypes.arrayOf(
@@ -16,7 +24,16 @@ export const menuItemsDefaultProps = {
 
 const Menu = ({ menuItems }) => (
   <div>
-    {menuItems.map(item => <a key={item.text} href={item.link}>{item.text}</a>)}
+    {menuItems.map(
+      item => (
+        <MenuLink
+          key={item.text}
+          href={item.link}
+        >
+          {item.text}
+        </MenuLink>
+      ),
+    )}
   </div>
 );
 

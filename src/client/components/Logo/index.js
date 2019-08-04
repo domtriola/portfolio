@@ -13,6 +13,7 @@ const Img = styled.img`
 `;
 
 const H1 = styled.h1`
+  font-size: ${rem(16)}
   text-transform: uppercase;
 `;
 

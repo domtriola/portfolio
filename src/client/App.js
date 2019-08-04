@@ -5,9 +5,13 @@ import content from '../content';
 import rem from './style/rem';
 
 import Header from './sections/Header';
+import Body from './sections/Body';
+import Footer from './sections/Footer';
 
 const AppContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -24,6 +28,8 @@ const App = () => (
         logo={content.logo}
         menuItems={content.menu.items}
       />
+      <Body />
+      <Footer />
     </AppContainer>
   </ThemeProvider>
 );
