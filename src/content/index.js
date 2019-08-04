@@ -1,7 +1,10 @@
 export default {
   logo: {
     text: 'Dominick Triola',
-    image: 'svg',
+    image: {
+      path: '/images/logos/dominick-triola_logo.svg',
+      alt: "Dominick's emblem",
+    },
   },
   menu: {
     items: [

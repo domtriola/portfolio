@@ -21,10 +21,6 @@ const html = ({ body, styles }) => `
         You need to enable JavaScript to run this app.
       </noscript>
       <div id="root">${body}</div>
-      <!--
-        This HTML file is a template.
-        If you open it directly in the browser, you will see an empty page.
-      -->
     </body>
   </html>
 `;

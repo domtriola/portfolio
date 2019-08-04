@@ -16,7 +16,7 @@ export const menuItemsDefaultProps = {
 
 const Menu = ({ menuItems }) => (
   <div>
-    {menuItems.map(item => [item.text, item.link])}
+    {menuItems.map(item => <a key={item.text} href={item.link}>{item.text}</a>)}
   </div>
 );
 
