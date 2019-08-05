@@ -1,3 +1,30 @@
+// Template:
+// {
+//   title: '',
+//   headline: '',
+//   about: '',
+//   image: {
+//     path: '',
+//     alt: '',
+//   },
+//   moreInfo: {
+//     text: '',
+//     path: '',
+//   },
+//   links: [
+//     {
+//       type: 'live',
+//       iconPath: '',
+//       url: '',
+//     },
+//     {
+//       type: 'github',
+//       iconPath: '',
+//       url: '',
+//     },
+//   ],
+// },
+
 export default [
   {
     title: 'SpaceTyper',
@@ -72,7 +99,10 @@ export default [
     `,
     image: {
       path: '/images/projects/cellularautomata/screenshot.png',
-      alt: '',
+      alt: `
+        A screenshot of the cellular automata app. A grid of cells of various
+        colors with control panels for parameters.
+      `,
     },
     moreInfo: {
       text: 'Experiment',
@@ -88,6 +118,37 @@ export default [
         type: 'github',
         iconPath: '',
         url: 'https://github.com/domtriola/cellular-automata',
+      },
+    ],
+  },
+  {
+    title: 'Bot Chat',
+    headline: 'CleverBot says hi',
+    about: `
+      I made this to learn Elixir. If you haven't heard, Elixir is the new
+      hotness.
+    `,
+    image: {
+      path: '/images/projects/botchat/screenshot.png',
+      alt: `
+        A screenshot of the Bot Chat app. A chat window is open with a list of
+        recent messages.
+      `,
+    },
+    moreInfo: {
+      text: 'Say hello',
+      path: 'https://bots-chat.herokuapp.com/',
+    },
+    links: [
+      {
+        type: 'live',
+        iconPath: '',
+        url: 'https://bots-chat.herokuapp.com/',
+      },
+      {
+        type: 'github',
+        iconPath: '',
+        url: 'https://github.com/domtriola/bot-chat',
       },
     ],
   },
