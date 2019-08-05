@@ -32,8 +32,10 @@ const Tile = ({ text, project }) => {
         ? (
           <Project
             title={project.title}
+            headline={project.headline}
             about={project.about}
             image={project.image}
+            moreInfo={project.moreInfo}
           />
         )
         : (
