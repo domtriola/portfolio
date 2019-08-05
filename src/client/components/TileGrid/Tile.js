@@ -9,25 +9,29 @@ import Project, { projectPropTypes } from './Project';
 const TileContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: inherit;
+  align-items: ${props => props.alignItems};
   margin-bottom: ${rem(40)};
 `;
 
 const propTypes = {
   text: PropTypes.string,
   project: { ...projectPropTypes },
+  position: PropTypes.number,
 };
 
 const defaultProps = {
   text: '',
   project: {},
+  position: 0,
 };
 
-const Tile = ({ text, project }) => {
+const Tile = ({ text, project, position }) => {
   const isProject = Object.keys(project).length > 0;
+  const alignItemsIfText = position === 0 ? 'flex-end' : 'flex-start';
+  const alignItems = isProject ? 'stretch' : alignItemsIfText;
 
   return (
-    <TileContainer>
+    <TileContainer alignItems={alignItems}>
       {isProject
         ? (
           <Project

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const ColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: ${props => (props.position === 0 ? 'flex-end' : 'flex-start')};
+  align-items: stretch;
   width: 48%;
 `;
 
@@ -20,11 +20,17 @@ const defaultProps = {
   children: [],
 };
 
-const Column = ({ position, children }) => (
-  <ColumnContainer position={position}>
-    {children}
-  </ColumnContainer>
-);
+const Column = ({ position, children }) => {
+  const childrenWithPos = React.Children.toArray(children).map(
+    child => React.cloneElement(child, { position }),
+  );
+
+  return (
+    <ColumnContainer>
+      {childrenWithPos}
+    </ColumnContainer>
+  );
+};
 
 Column.propTypes = propTypes;
 Column.defaultProps = defaultProps;
