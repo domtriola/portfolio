@@ -33,9 +33,10 @@ export default [
   },
   {
     title: 'Audio Visualizer',
-    headline: '',
+    headline: 'A synesthesia experience',
     about: `
-      ...
+      We do not yet support sight to sound, taste to sight, or sound to taste.
+      Smellovision coming soon.
     `,
     image: {
       path: '/images/projects/audiovisualizer/screenshot.png',
@@ -45,8 +46,8 @@ export default [
       `,
     },
     moreInfo: {
-      text: '',
-      path: '',
+      text: 'See the music',
+      path: 'https://audio-visualizer-v2.herokuapp.com/',
     },
     links: [
       {
@@ -63,26 +64,30 @@ export default [
   },
   {
     title: 'Cellular Automata',
-    headline: '',
-    about: '',
+    headline: 'A touch of ordered chaos',
+    about: `
+      Seeing Conway's "Game of Life" and "Rock Paper Scissors" automata
+      simulations made me curious about what other patterns might arrise from a
+      bunch of "organisms" and a simple set of rules.
+    `,
     image: {
-      path: '',
+      path: '/images/projects/cellularautomata/screenshot.png',
       alt: '',
     },
     moreInfo: {
-      text: '',
-      path: '',
+      text: 'Experiment',
+      path: 'https://dominicktriola.com/cellular-automata/',
     },
     links: [
       {
         type: 'live',
         iconPath: '',
-        url: 'https://audio-visualizer-v2.herokuapp.com/',
+        url: 'https://dominicktriola.com/cellular-automata/',
       },
       {
         type: 'github',
         iconPath: '',
-        url: 'https://github.com/domtriola/audio-visualizer-v2',
+        url: 'https://github.com/domtriola/cellular-automata',
       },
     ],
   },

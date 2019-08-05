@@ -27,6 +27,8 @@ const P = styled.p`
 
 const A = styled.a`
   color: ${props => props.theme.color.font};
+  font-size: ${rem(20)}
+  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   margin-bottom: ${rem(30)};
