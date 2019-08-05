@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ColumnContainer = styled.div`
-  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: ${props => (props.position === 0 ? 'flex-end' : 'flex-start')};
+  width: 48%;
 `;
 
 const propTypes = {
+  position: PropTypes.number.isRequired,
   children: PropTypes.arrayOf(
     PropTypes.object,
   ),
@@ -16,8 +20,8 @@ const defaultProps = {
   children: [],
 };
 
-const Column = ({ children }) => (
-  <ColumnContainer>
+const Column = ({ position, children }) => (
+  <ColumnContainer position={position}>
     {children}
   </ColumnContainer>
 );

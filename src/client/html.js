@@ -13,7 +13,7 @@ const html = ({ body, styles }) => `
       <link rel="shortcut icon" href="/favicon.png">
       <link href="/style.css" rel="stylesheet">
       ${styles}
-      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet">
       <title>Dominick Triola</title>
     </head>
     <body>

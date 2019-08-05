@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import rem from '../../style/rem';
-import content from '../../../content';
 
 const TileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
   margin-bottom: ${rem(40)};
 `;
 
@@ -14,6 +16,7 @@ const ProjectContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
+  max-width: 80%;
   text-align: right;
 `;
 
@@ -23,6 +26,10 @@ const H3 = styled.h3`
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: ${rem(22)};
+`;
+
+const P = styled.p`
+  margin-bottom: ${rem(24)};
 `;
 
 const propTypes = {
@@ -50,7 +57,7 @@ const Tile = ({ text, project }) => {
     ? (
       <ProjectContainer>
         <H3>{project.title}</H3>
-        <p>{project.about}</p>
+        <P>{project.about}</P>
         <img src={project.image.path} alt={project.image.alt} />
       </ProjectContainer>
     ) : (

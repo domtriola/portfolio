@@ -25,8 +25,8 @@ const TileGrid = ({ children }) => {
 
   return (
     <Section>
-      <Column>{evens}</Column>
-      <Column>{odds}</Column>
+      <Column position={0}>{evens}</Column>
+      <Column position={1}>{odds}</Column>
     </Section>
   );
 };

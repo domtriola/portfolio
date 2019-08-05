@@ -11,6 +11,6 @@ export default {
     },
   },
   font: {
-    main: "'Poppins', sans-serif",
+    main: "'Cabin', sans-serif",
   },
 };
