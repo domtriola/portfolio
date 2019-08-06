@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const TextContainer = styled.div`
   max-width: 80%;
   text-align: right;
-  // align-items: ${props => (props.position === 0 ? 'flex-end' : 'flex-start')};
   align-items: right;
 `;
 

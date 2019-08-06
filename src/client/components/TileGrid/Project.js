@@ -3,17 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import rem from '../../style/rem';
 
+import Header, { headerPropTypes } from './Header';
+
 const ProjectContainer = styled.div`
   background-color: ${props => props.theme.color.overlay};
   padding: ${rem(24)};
-`;
-
-const H3 = styled.h3`
-  color: ${props => props.theme.color.accent.secondary};
-  font-size: ${rem(14)};
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: ${rem(16)};
 `;
 
 const H4 = styled.h4`
@@ -35,7 +29,8 @@ const A = styled.a`
 `;
 
 export const projectPropTypes = {
-  title: PropTypes.string,
+  title: headerPropTypes.title,
+  links: headerPropTypes.links,
   headline: PropTypes.string,
   about: PropTypes.string,
   image: PropTypes.shape({
@@ -50,6 +45,7 @@ export const projectPropTypes = {
 
 const defaultProps = {
   title: '',
+  links: [],
   headline: '',
   about: '',
   image: {},
@@ -72,13 +68,14 @@ const ifPresent = (value) => {
 
 const Project = ({
   title,
+  links,
   headline,
   about,
   image,
   moreInfo,
 }) => (
   <ProjectContainer>
-    {ifPresent(title) ? <H3>{title}</H3> : null}
+    {ifPresent(title) ? <Header title={title} links={links} /> : null}
     {ifPresent(headline) ? <H4>{headline}</H4> : null}
     {ifPresent(about) ? <P>{about}</P> : null}
     {ifPresent(moreInfo)

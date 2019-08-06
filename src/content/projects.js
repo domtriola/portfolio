@@ -19,7 +19,7 @@
 //     },
 //     {
 //       type: 'github',
-//       iconPath: '',
+//       iconPath: '/images/icons/GitHub-Mark-Light-120px-plus.png',
 //       url: '',
 //     },
 //   ],
@@ -48,12 +48,12 @@ export default [
     links: [
       {
         type: 'live',
-        iconPath: '',
+        iconPath: '/images/icons/globe.png',
         url: 'http://www.spacetyper.com',
       },
       {
         type: 'github',
-        iconPath: '',
+        iconPath: '/images/icons/GitHub-Mark-Light-120px-plus.png',
         url: 'https://github.com/domtriola/space-typer',
       },
     ],
@@ -79,12 +79,12 @@ export default [
     links: [
       {
         type: 'live',
-        iconPath: '',
+        iconPath: '/images/icons/globe.png',
         url: 'https://audio-visualizer-v2.herokuapp.com/',
       },
       {
         type: 'github',
-        iconPath: '',
+        iconPath: '/images/icons/GitHub-Mark-Light-120px-plus.png',
         url: 'https://github.com/domtriola/audio-visualizer-v2',
       },
     ],
@@ -94,7 +94,7 @@ export default [
     headline: 'A touch of ordered chaos',
     about: `
       Seeing Conway's "Game of Life" and "Rock Paper Scissors" automata
-      simulations made me curious about what other patterns might arrise from a
+      simulations made me curious about what other patterns might arise from a
       bunch of "organisms" and a simple set of rules.
     `,
     image: {
@@ -111,12 +111,12 @@ export default [
     links: [
       {
         type: 'live',
-        iconPath: '',
+        iconPath: '/images/icons/globe.png',
         url: 'https://dominicktriola.com/cellular-automata/',
       },
       {
         type: 'github',
-        iconPath: '',
+        iconPath: '/images/icons/GitHub-Mark-Light-120px-plus.png',
         url: 'https://github.com/domtriola/cellular-automata',
       },
     ],
@@ -125,7 +125,7 @@ export default [
     title: 'Bot Chat',
     headline: 'CleverBot says hi',
     about: `
-      I made this to learn Elixir. If you haven't heard, Elixir is the new
+      I made a chat app to learn Elixir. If you haven't heard, Elixir is the new
       hotness.
     `,
     image: {
@@ -142,12 +142,12 @@ export default [
     links: [
       {
         type: 'live',
-        iconPath: '',
+        iconPath: '/images/icons/globe.png',
         url: 'https://bots-chat.herokuapp.com/',
       },
       {
         type: 'github',
-        iconPath: '',
+        iconPath: '/images/icons/GitHub-Mark-Light-120px-plus.png',
         url: 'https://github.com/domtriola/bot-chat',
       },
     ],

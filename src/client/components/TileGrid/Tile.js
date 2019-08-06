@@ -6,7 +6,7 @@ import rem from '../../style/rem';
 import Text from './Text';
 import Project, { projectPropTypes } from './Project';
 
-const TileContainer = styled.div`
+const TileContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: ${props => props.alignItems};
@@ -15,7 +15,7 @@ const TileContainer = styled.div`
 
 const propTypes = {
   text: PropTypes.string,
-  project: { ...projectPropTypes },
+  project: PropTypes.shape(projectPropTypes),
   position: PropTypes.number,
 };
 
@@ -36,6 +36,7 @@ const Tile = ({ text, project, position }) => {
         ? (
           <Project
             title={project.title}
+            links={project.links}
             headline={project.headline}
             about={project.about}
             image={project.image}
