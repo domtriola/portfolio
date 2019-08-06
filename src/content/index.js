@@ -10,14 +10,14 @@ export default {
   },
   menu: {
     items: [
-      {
-        text: 'About',
-        link: '#about',
-      },
-      {
-        text: 'Projects',
-        link: '#projects',
-      },
+      // {
+      //   text: 'About',
+      //   link: '#about',
+      // },
+      // {
+      //   text: 'Projects',
+      //   link: '#projects',
+      // },
     ],
   },
   tagLine: 'Exploring code with curiosity',

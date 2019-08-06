@@ -8,7 +8,7 @@ import TileGrid from '../../components/TileGrid';
 import Tile from '../../components/TileGrid/Tile';
 
 const BodyContainer = styled.section`
-  padding: ${rem(50)};
+  padding: ${rem(20)} ${rem(50)} ${rem(50)};
 `;
 
 const Body = () => (
