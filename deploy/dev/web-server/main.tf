@@ -7,6 +7,6 @@ resource "aws_instance" "web" {
   instance_type = "${var.web_instance_type}"
 
   tags = {
-    Name = "${var.user}-${var.application_name}-web"
+    Name = "${var.user}-${var.project}-web"
   }
 }

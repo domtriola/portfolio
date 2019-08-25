@@ -12,8 +12,9 @@ variable "user" {
   type = "string"
 }
 
-variable "application_name" {
+variable "project" {
   type = "string"
+  default = "dominicktriola_portfolio"
 }
 
 variable "web_image_id" {
