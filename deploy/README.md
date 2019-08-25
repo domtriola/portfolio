@@ -2,6 +2,6 @@
 
 Deploy:
 ```
-cd deploy/dev
-TF_VAR_application_name=portfolio TF_VAR_user=domt TF_VAR_environment=dev ./deploy.sh
+cd deploy/dev/web-server
+TF_VAR_user=domt TF_VAR_environment=dev terraform apply
 ```
