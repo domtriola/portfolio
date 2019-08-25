@@ -19,7 +19,7 @@ variable "project" {
 
 variable "web_image_id" {
   type = "string"
-  default = "ami-0b898040803850657" # Amazon Linux 2
+  default = "ami-07d0cf3af28718ef8" # Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
 }
 
 variable "web_instance_type" {

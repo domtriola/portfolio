@@ -10,7 +10,7 @@
       "access_key": "{{user `aws_access_key`}}",
       "secret_key": "{{user `aws_secret_key`}}",
       "region": "{{user `region`}}",
-      "source_ami": "ami-0b898040803850657",
+      "source_ami": "ami-07d0cf3af28718ef8",
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
       "ami_name": "dominicktriola_portfolio-{{timestamp}}"
