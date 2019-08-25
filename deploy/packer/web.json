@@ -1,8 +1,12 @@
 {
   "variables": {
+    "project_name": "dominicktriola_portfolio",
+    "github_user": "domtriola",
+    "github_repo_name": "dominicktriola",
     "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
     "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
-    "region": "us-east-1"
+    "region": "us-east-1",
+    "version": null
   },
   "builders": [
     {
@@ -13,7 +17,10 @@
       "source_ami": "ami-07d0cf3af28718ef8",
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "dominicktriola_portfolio-{{timestamp}}"
+      "ami_name": "{{user `project_name`}}-v{{user `version`}}-{{timestamp}}",
+      "tags": {
+        "Name": "{{user `project_name`}}-v{{user `version`}}-{{timestamp}}"
+      }
     }
   ],
   "provisioners": [
@@ -21,7 +28,10 @@
       "type": "shell",
       "inline": [
         "sleep 30",
-        "sudo apt-get update"
+        "sudo apt-get update",
+        "wget https://github.com/{{user `github_user`}}/{{user `github_repo_name`}}/archive/v{{user `version`}}.tar.gz",
+        "tar xvzf v{{user `version`}}.tar.gz -C /home/ubuntu/",
+        "mv {{user `github_repo_name`}}-{{user `version`}} release"
       ]
     }
   ]
