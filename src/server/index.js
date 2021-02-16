@@ -14,15 +14,22 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
   const sheet = new ServerStyleSheet();
 
-  const body = renderToString(sheet.collectStyles(<App />));
-  const styles = sheet.getStyleTags();
+  try {
+    const body = renderToString(sheet.collectStyles(<App />));
+    const styles = sheet.getStyleTags();
 
-  res.send(
-    html({
-      body,
-      styles,
-    }),
-  );
+    res.send(
+      html({
+        body,
+        styles,
+      }),
+    );
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  } finally {
+    sheet.seal();
+  }
 });
 
 app.listen(port);
