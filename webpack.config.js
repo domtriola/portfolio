@@ -26,14 +26,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['@babel/react'],
-        },
+        use: 'babel-loader',
       },
       {
         test: /\.html$/,
-        loader: 'html-loader',
+        use: 'html-loader',
       },
     ],
   },
