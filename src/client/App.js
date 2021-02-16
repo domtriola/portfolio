@@ -15,9 +15,9 @@ const AppContainer = styled.div`
   width: 100%;
   height: 100%;
   font-size: ${rem(18)};
-  font-family: ${props => props.theme.font.main};
-  color: ${props => props.theme.color.font};
-  background-color: ${props => props.theme.color.base};
+  font-family: ${(props) => props.theme.font.main};
+  color: ${(props) => props.theme.color.font};
+  background-color: ${(props) => props.theme.color.base};
 `;
 
 const App = () => (

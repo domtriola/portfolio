@@ -12,8 +12,9 @@ const { port } = config;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  const body = renderToString(<App />);
   const sheet = new ServerStyleSheet();
+
+  const body = renderToString(sheet.collectStyles(<App />));
   const styles = sheet.getStyleTags();
 
   res.send(
