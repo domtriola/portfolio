@@ -31,8 +31,8 @@ export default [
     headline: 'A galactic dexterity adventure',
     about: `
       My typing speed used to be... not great. TypeRacer was a fun way to
-      practice, but one day I thought, "Racing cars is kind of boring; I'd
-      like to race spaceships!" And SpaceTyper was born.
+      practice, but one day I thought, "Racing cars is alright, but I'd really
+      like to race spaceships!" And so I built Spacetyper.
     `,
     image: {
       path: '/images/projects/spacetyper/screenshot.png',
@@ -62,7 +62,7 @@ export default [
     title: 'Audio Visualizer',
     headline: 'A synesthesia experience',
     about: `
-      We do not yet support sight to sound, taste to sight, or sound to taste.
+      Does not yet support sight to sound, taste to sight, or sound to taste.
       Smellovision coming soon.
     `,
     image: {
@@ -125,8 +125,7 @@ export default [
     title: 'Bot Chat',
     headline: 'CleverBot says hi',
     about: `
-      I made a chat app to learn Elixir. If you haven't heard, Elixir is the new
-      hotness.
+      I made a chat application to learn Elixir.
     `,
     image: {
       path: '/images/projects/botchat/screenshot.png',
@@ -135,16 +134,7 @@ export default [
         recent messages.
       `,
     },
-    moreInfo: {
-      text: 'Say hello',
-      path: 'https://bots-chat.herokuapp.com/',
-    },
     links: [
-      {
-        type: 'live',
-        iconPath: '/images/icons/globe.png',
-        url: 'https://bots-chat.herokuapp.com/',
-      },
       {
         type: 'github',
         iconPath: '/images/icons/GitHub-Mark-Light-120px-plus.png',
