@@ -2,12 +2,12 @@ import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { ServerStyleSheet } from 'styled-components';
-import config from '../config';
+import config, { Config } from '../config';
 import App from '../client/App';
 import html from '../client/html';
 
-const app = express();
-const { port } = config;
+const app: express.Express = express();
+const { port }: Config = config;
 
 app.use(express.static('public'));
 
