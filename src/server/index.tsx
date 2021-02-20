@@ -11,12 +11,12 @@ const { port } = config;
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
   const sheet = new ServerStyleSheet();
 
   try {
-    const body = renderToString(sheet.collectStyles(<App />));
-    const styles = sheet.getStyleTags();
+    const body: string = renderToString(sheet.collectStyles(<App />));
+    const styles: string = sheet.getStyleTags();
 
     res.send(
       html({
@@ -31,6 +31,12 @@ app.get('/', (req, res) => {
     sheet.seal();
   }
 });
+
+app.get('*', (req, res) => {
+  console.log("Request for unknown path:", req.path);
+
+  res.send("Page not found");
+})
 
 app.listen(port);
 // eslint-disable-next-line no-console
