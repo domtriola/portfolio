@@ -93,7 +93,7 @@ export default [
     title: 'Cellular Automata',
     headline: 'A touch of ordered chaos',
     about: `
-      Seeing Conway's "Game of Life" and "Rock Paper Scissors" automata
+      Discovering Conway's "Game of Life" and "Rock Paper Scissors" automata
       simulations made me curious about what other patterns might arise from a
       bunch of "organisms" and a simple set of rules.
     `,
